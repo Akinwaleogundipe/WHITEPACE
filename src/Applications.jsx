@@ -1,48 +1,36 @@
-import './index.css'
-import { useMediaQuery } from 'react-responsive';
-import ApplicationsMobile from './Mobileviews/ApplicationsMobile';
+import "./index.css";
+import ApplicationsMobile from "./Mobileviews/ApplicationsMobile";
+import bgelem from "./assets/desktop/bgelem.png";
+import Apps from "./assets/desktop/Apps.png";
 
+function Applications() {
+	return (
+		<>
+			<main className=" flex flex-col  mx-auto  relative bg-[#043873] text-white">
+				<img
+					src={bgelem}
+					alt=""
+					className="absolute object-cover inset-0 w-full h-full "
+				/>
 
-function Applications(){
-  const isMobile = useMediaQuery({maxWidth:767})
-return (
-  <>
-    {isMobile ? (
-      <ApplicationsMobile />
-    ) : (
-      <>
-        <main className="h-[751px] relative  bg-[#043873] flex flex-col   pt-[140px] pb-[140px] pr-[180px] pl-[180px] max-[1700px]:pr-[32px] max-[1700px]:pl-[32px]   max-xl:pr-[32px] max-xl:pl-[32px]  z-0 ">
-          <img
-            src="/Landing page V1/desktop/bgelem.png"
-            alt=""
-            className="absolute inset-0 h-auto  w-auto  object-cover z-0 "
-          />
-
-          <section className=" flex items-center align-middle z-10 gap-18">
-            <div>
-              <img
-                src="/Landing page V1/desktop/Apps.png"
-                alt=""
-                className=""
-              />
-            </div>
-            <div>
-              <p className="text-white font-[700] text-[72px] text-nowrap">
-                Work with Your <br /> Favorite Apps Using <br /> whitepace
-              </p>
-              <p className="text-white font-[300] text-[18px] text-nowrap">
-                Whitepace teams up with your favorite software. Integrate with
-                over 1000+ apps with Zapier to <br /> have all the tools you
-                need for your project success
-              </p>
-            </div>
-          </section>
-        </main>
-      </>
-    )}
-  </>
-);
-
+				<section className="flex flex-col md:flex-row justify-center items-center z-10 gap-18 my-20 md:my-35">
+					<div className=" ">
+						<img src={Apps} alt="" className=" w-full h-full " />
+					</div>
+					<div className="w-full lg:w-2/5 text-center md:text-start">
+						<p className=" font-bold text-4xl md:text-6xl lg:text-7xl leading-[100%]">
+							Work with Your Favorite Apps Using whitepace
+						</p>
+						<p className=" mt-6 text-lg">
+							Whitepace teams up with your favorite software. Integrate with
+							over 1000+ apps with Zapier to have all the tools you need for
+							your project success
+						</p>
+					</div>
+				</section>
+			</main>
+		</>
+	);
 }
 
-export default Applications
+export default Applications;
