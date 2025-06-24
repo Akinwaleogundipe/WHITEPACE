@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+@layer base {
+    *{
+        font-family: "Inter", sans-serif;
+    }
+
+}
