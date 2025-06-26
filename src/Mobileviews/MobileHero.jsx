@@ -1,5 +1,5 @@
 import {FaBars, FaTimes} from 'react-icons/fa';
-import logo from "/Logo.png"; 
+import logo from "../assets/Logo.png"; 
 import { useRef, useState } from 'react';
 import { VscMenu } from "react-icons/vsc";
 import { MdClose } from "react-icons/md";

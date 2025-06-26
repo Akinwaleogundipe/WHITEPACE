@@ -1,7 +1,10 @@
+
+import { GoArrowRight } from "react-icons/go"; 
 import "./index.css";
-import ApplicationsMobile from "./Mobileviews/ApplicationsMobile";
+
 import bgelem from "./assets/desktop/bgelem.png";
 import Apps from "./assets/desktop/Apps.png";
+
 
 function Applications() {
 	return (
@@ -16,21 +19,25 @@ function Applications() {
 				<section className="flex flex-col md:flex-row justify-center items-center z-10 gap-18 my-20 md:my-35">
 					<div className=" ">
 						<img src={Apps} alt="" className=" w-full h-full " />
-					</div>
+        </div>
 					<div className="w-full lg:w-2/5 text-center md:text-start">
 						<p className=" font-bold text-4xl md:text-6xl lg:text-7xl leading-[100%]">
-							Work with Your Favorite Apps Using whitepace
-						</p>
+            Work with Your Favorite Apps Using whitepace
+          </p>
 						<p className=" mt-6 text-lg">
 							Whitepace teams up with your favorite software. Integrate with
 							over 1000+ apps with Zapier to have all the tools you need for
 							your project success
-						</p>
-					</div>
-				</section>
-			</main>
-		</>
-	);
+          </p>
+          <button className="bg-[#4F9CF9] self-center max-w-[194px] h-[63px] rounded-xl flex place-content-center items-center text-xl gap-2 ">
+            Read More <GoArrowRight />
+          </button>
+        </div>
+      </section>
+    </main>
+  </>
+);
+
 }
 
 export default Applications;

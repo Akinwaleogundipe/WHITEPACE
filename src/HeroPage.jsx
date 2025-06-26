@@ -1,4 +1,4 @@
-import logo from "/Logo.png";
+import logo from "../src/assets/Logo.png";
 import "./index.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
@@ -6,6 +6,7 @@ import NavBar from "./Mobileviews/MobileHero";
 import { useState } from "react";
 import { VscMenu } from "react-icons/vsc";
 import { MdClose } from "react-icons/md";
+import Background from "../src/assets/desktop/Element1.png";
 
 const NavLinks = () => {
   return (
@@ -44,12 +45,11 @@ const NavLinks = () => {
 
 
 function HeroPage() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
   const [click, setClick] = useState(false); 
 
   return (
     <>
-      {!isMobile ? (
+     
         <>
           <header className="bg-[#043873] h-[92px] w-full flex   justify-between pt-[16px] pb-[16px] pl-[200px] pr-[200px]  max-xl:pr-[32px] max-xl:pl-[32px] items-center text-white ">
             <img className="" src={logo} alt="Whitepace-logo" />
@@ -107,7 +107,7 @@ function HeroPage() {
             <div>
               <img
                 className="absolute inset-0 m-auto object-center object-cover"
-                src="/Landing page V1/desktop/Element1.png"
+                src={Background}
                 alt=""
               />
             </div>
@@ -131,9 +131,7 @@ function HeroPage() {
             </section>
           </main>
         </>
-      ) : (
-        <NavBar />
-      )}
+  
     </>
   );
 }

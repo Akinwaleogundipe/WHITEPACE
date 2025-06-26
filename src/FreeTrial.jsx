@@ -1,15 +1,13 @@
 import './index.css';
 import Card from './NameCard'
-import { useMediaQuery } from 'react-responsive';
 import TrialsMobile from './Mobileviews/TrialsMobile';
+import Avatar1 from "../src/assets/desktop/Avater1.png";
+import Avatar2 from "../src/assets/desktop/Avater2.png";
+import Avatar3 from "../src/assets/desktop/Avater3.png";
 
 function FreeTrial(){
-  const isMobile = useMediaQuery({ maxWidth: 767 });
     return (
-      <>
-        {isMobile ? (
-          <TrialsMobile />
-        ) : (
+    
           <>
             <main className="h-[1000px] pt-[140px] pb[140px] pr-[150px] pl-[150px] xl:pr-[32px] xl:pl-[32px] flex flex-col relative  gap-20">
               <img
@@ -23,7 +21,7 @@ function FreeTrial(){
 
               <div className="flex justify-center gap-8 xl:overflow-x-auto xl:snap-mandatory lg:overflow-x-auto lg:snap-mandatory">
                 <Card
-                  img="/Landing page V1/desktop/Avater1.png"
+                  img={Avatar1}
                   description="Whitepace is designed as a collaboration tool for
              businesses that is a full project management solution"
                   name="Oberon Shaw, MCH"
@@ -34,7 +32,7 @@ function FreeTrial(){
                 />
 
                 <Card
-                  img="/Landing page V1/desktop/Avater2.png"
+                  img={Avatar2}
                   description="Whitepace is designed as a collaboration tool for
              businesses that is a full project management solution"
                   name="Will Smith, AB"
@@ -46,7 +44,7 @@ function FreeTrial(){
                 />
 
                 <Card
-                  img="/Landing page V1/desktop/Avater3.png"
+                  img={Avatar3}
                   description="Whitepace is designed as a collaboration tool for
              businesses that is a full project management solution"
                   name="John Stone, MA"
@@ -59,8 +57,6 @@ function FreeTrial(){
               </div>
             </main>
           </>
-        )}
-      </>
     );
 
 
