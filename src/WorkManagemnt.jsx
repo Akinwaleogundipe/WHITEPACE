@@ -1,78 +1,71 @@
 import './index.css';
 import { GoArrowRight } from "react-icons/go";
-import { useState } from 'react';
 import WorkTogether from "../src/assets/desktop/WorkTogetherImage.png";
 import Element3 from "../src/assets/desktop/Element3.png";
 import Underline from "../src/assets/desktop/Element.png";
 
+import mobileBackground from "../src/assets/tablet/tabletelement2.png";
 
 
 function WorkManagement (){
   
 
-
     return (
-    
+      <>
+        <main className=" flex flex-col justify-center gap-25 relative w-full h-full text-center border lg:text-start py-20 px-6  lg:py-35 lg:px-9 ">
+          <div className="absolute inset-0 w-full h-full">
+            <img src={mobileBackground} alt="" className=" pt-25" />
+          </div>
 
-          <>
-            <main className=" flex flex-col  gap-[100px] relative  pt-[140px] pb-[140px] pr-[120px] pl-[120px]  max-xl:pr-[80px] max-xl:pl-[80px]">
-              <div className="absolute inset-0  pt-[180px] ">
-                <img src="/Landing page V1/desktop/BACKGROUND.png" alt="" />
-              </div>
-              <section className="w-full h-[547px] relative  flex ">
-                <div className=" flex flex-col relative  w-[50%]  h-[547px] z-10 ">
-                  <p className="flex flex-col font-[700] text-[72px] text-[#212529] relative  tracking-[-2%] z-10 pt-[30px] pb-[30px]">
-                    Project <br /> Management
-                  </p>
-                  <img
-                    src={Element3}
-                    alt=""
-                    className="absolute top-[31%] z-0 "
-                  />
-                  <p className="text-[18px] font-[300] leading-[30px] pb-[50px]">
-                    Images, videos, PDFs and audio files are supported. Create
-                    math expressions and diagrams directly from the app. Take
-                    photos with the mobile app and save them to a note.
-                  </p>
+          <section className="flex flex-col   w-full h-full  justify-center items-center gap-20    lg:flex-row    ">
+            <div className=" flex flex-col relative gap-15 items-center lg:w-full lg:h-full">
 
-                  <button className="bg-[#4F9CF9] w-[201px] h-[63px] rounded-[6px] flex items-center text-white pt-[20px] pb-[20px] pr-[40px] pl-[40px]">
-                    Get Started &nbsp;&nbsp; <GoArrowRight />
-                  </button>
-                </div>
+              <p className="flex flex-col font-bold text-4xl lg:text-7xl text-[#212529] relative   z-10 ">
+                Project Management
+              </p>
+              {/* <img src={Element3} alt="" className="flex  self-center absolute  z-0 " /> */}
+              <p className="text-[18px] font-[300] leading-[30px] ">
+                Images, videos, PDFs and audio files are supported. Create math
+                expressions and diagrams directly from the app. Take photos with
+                the mobile app and save them to a note.
+              </p>
 
-                <div className="w-[748px] h-[547px] bg-[#A7CEFC]"></div>
-              </section>
+              <button className="bg-[#4F9CF9] w-50 h-17.5 rounded-lg flex items-center justify-center gap-4 text-white self-center lg:self-start">
+                Get Started <GoArrowRight className="text-2xl" />
+              </button>
+            </div>
 
-              <section className="h-[661px] w-full items-center relative pt-[20px] gap-[100px] flex  ">
-                <div>
-                  <img
-                    src={WorkTogether}
-                    alt=""
-                  />
-                </div>
-                <div className="flex flex-col text-[#212529] relative pt-[100px] pb-[100px]">
-                  <p className="flex flex-col font-[700] text-[72px]  relative  tracking-[-2%] z-10 pt-[30px] pb-[30px]">
-                    Work together
-                  </p>
-                  <img
-                    src={Underline}
-                    alt=""
-                    className="absolute  left-[30%] top-[37%]"
-                  />
-                  <p className="text-[18px] font-[300] leading-[30px] pb-[50px] whitespace-nowrap">
-                    With whitepace, share your notes with your colleagues and
-                    collaborate on them. <br /> You can also publish a note to
-                    the internet and share the URL with others.
-                  </p>
+            <div className="bg-[#A7CEFC] w-70 h-48  lg:w-150 lg:h-87 md:shrink-0  z-10"></div>
+          </section> 
 
-                  <button className="bg-[#4F9CF9] w-[186px] h-[63px] rounded-[6px] flex items-center text-white pt-[20px] pb-[20px] pr-[40px] pl-[40px] gap-2 self-stretch">
-                    Try it now <GoArrowRight className="2xl" />
-                  </button>
-                </div>
-              </section>
-            </main>
-          </>
-    )
+          <section className=" flex flex-col-reverse lg:flex-row h-full w-full justify-center items-center relative  gap-25 ">
+            <div>
+              <img src={WorkTogether} alt="" />
+            </div>
+
+            <div className="flex flex-col  gap-25 text-[#212529] relative ">
+              <p className=" font-bold text-4xl lg:text-7xl relative   z-10 ">
+                Work together
+              </p>
+              {/* <img
+                src={Underline}
+                alt=""
+                className="absolute  left-[30%] top-[37%]"
+              /> */}
+              <p className="text-[18px] font-[300] leading-[30px]">
+                With whitepace, share your notes with your colleagues and
+                collaborate on them. You can also publish a note to the internet
+                and share the URL with others.
+              </p>
+
+              <button className="bg-[#4F9CF9] w-50 h-17.5 rounded-lg flex items-center justify-center gap-4 text-white self-center lg:self-start">
+                Try it now <GoArrowRight className="text-2xl" />
+              </button>
+            </div>
+          </section>
+        </main>
+      </>
+    );
 
 
 

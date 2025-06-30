@@ -6,10 +6,10 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
  const Card = ({img, description,name,position, bgcolor ,textcolor, iconcolor, namecolor}) => {
     return (
       <section
-        className=" min-h-[498px] min-w-[471px] pt-[60px] pb-[60px] pr-[40px] pl-[40px]  rounded-[10px] flex flex-col justify-between gap-10 shadow-2xl "
+        className=" min-h-[458px] min-w-[288px]  pt-[60px] pb-[60px] pr-[40px] pl-[40px]  rounded-[10px] flex flex-col justify-between gap-10 shadow-2xl "
         style={{ backgroundColor: bgcolor, color: textcolor }}
       >
-        <div className="flex flex-col  h-[223px] border-b gap-2">
+        <div className="flex flex-col   border-b gap-2">
           <FontAwesomeIcon
             icon={faQuoteLeft}
             className=" text-8xl flex self-start "

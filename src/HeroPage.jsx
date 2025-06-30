@@ -48,7 +48,7 @@ function HeroPage() {
   return (
     <>
       <>
-        <header className="bg-[#043873] h-17 w-full flex items-center  justify-between px-6   text-white border-b lg:py-11 lg:px-6">
+        <header className="bg-[#043873] h-17 w-full flex items-center  justify-between px-6   text-white lg:py-11 lg:px-6">
           <img className="" src={logo} alt="Whitepace-logo" />
           <nav className="hidden  xl:block ">
             <ul className="w-full flex gap-8">
@@ -100,7 +100,7 @@ function HeroPage() {
           </div>
         </header>
 
-        <main className="bg-[#043873] flex flex-col w-full h-full items-center lg:justify-center  lg:flex-row  gap-15 py-20 px-4    lg:py-35  relative     text-white  ">
+        <main className="bg-[#043873] flex flex-col w-full h-full items-center lg:justify-center  lg:flex-row  gap-15 py-20 px-4  lg:py-35  relative  text-white  ">
           <div>
             <img
               className="absolute object-cover inset-0 w-full h-full "
@@ -123,7 +123,7 @@ function HeroPage() {
               </button>
             </div>
           </section>
-          <div className="bg-[#A7CEFC] w-70 h-48  lg:w-150 lg:h-87 "></div>
+          <div className="bg-[#A7CEFC] w-70 h-48  lg:w-150 lg:h-87 md:shrink-0 z-10"></div>
         </main>
       </>
     </>

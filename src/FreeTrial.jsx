@@ -9,17 +9,17 @@ function FreeTrial(){
     return (
     
           <>
-            <main className="h-[1000px] pt-[140px] pb[140px] pr-[150px] pl-[150px] xl:pr-[32px] xl:pl-[32px] flex flex-col relative  gap-20">
+            <main className="h-full w-full flex flex-col relative py-25 px-4 md:py-35 md:px-5 gap-20 border">
               <img
                 src="/Landing page V1/desktop/Group.png"
                 alt=""
                 className="absolute a z-0 inset-0 left-[65%] top-[20%] "
               />
-              <p className="z-10 text-[70px] font-[700] text-[#212529] text-center">
+              <p className="z-10 text-4xl lg:text-7xl font-bold text-[#212529] text-center">
                 What Our Clients Says
               </p>
 
-              <div className="flex justify-center gap-8 xl:overflow-x-auto xl:snap-mandatory lg:overflow-x-auto lg:snap-mandatory">
+              <div className="flex justify-center gap-14 overflow-x-scroll  ">
                 <Card
                   img={Avatar1}
                   description="Whitepace is designed as a collaboration tool for
