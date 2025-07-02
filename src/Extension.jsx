@@ -1,4 +1,3 @@
-import './index.css';
 import { GoArrowRight } from "react-icons/go";
 
 
@@ -6,7 +5,7 @@ function Extension(){
 
 
     return (
-      <>
+    
         <>
           <main className="bg-[#043873] flex flex-col gap-25 items-center justify-center text-center  py-20 px-4 lg:py-35 lg:px-8 lg:flex-row lg:text-start h-full w-full  text-white">
             <div className="flex flex-col gap-15">
@@ -19,7 +18,7 @@ function Extension(){
                 Use as Extension
               </p>
 
-              <p className="text-normal font-[300] leading-[30px] ">
+              <p className="text-normal font-light leading-[30px] ">
                 Use the web clipper extension, available on Chrome and Firefox,
                 to save web pages or take screenshots as notes.
               </p>
@@ -32,7 +31,6 @@ function Extension(){
             <div className="bg-[#A7CEFC] w-70 h-48  lg:w-150 lg:h-87 md:shrink-0 z-10"></div>
           </main>
         </>
-      </>
     );
 }
 

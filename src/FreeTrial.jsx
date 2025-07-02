@@ -1,6 +1,4 @@
-import './index.css';
 import Card from './NameCard'
-import TrialsMobile from './Mobileviews/TrialsMobile';
 import Avatar1 from "../src/assets/desktop/Avater1.png";
 import Avatar2 from "../src/assets/desktop/Avater2.png";
 import Avatar3 from "../src/assets/desktop/Avater3.png";

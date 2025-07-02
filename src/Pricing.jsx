@@ -1,7 +1,6 @@
-import "./index.css";
 import { GoArrowRight } from "react-icons/go";
 import { LuCircleCheckBig } from "react-icons/lu";
-import PricingMobile from "./Mobileviews/PricingMobile";
+
 
  
 
@@ -19,7 +18,7 @@ return (
                 className="absolute top-[190px] left-1/2"
               /> */}
           <h1 className="text-4xl lg:text-7xl font-bold ">Choose Your Plan</h1>
-          <p className="text-lg font-light leading-[30px">
+          <p className="text-lg font-light leading-[30px]">
             Whether you want to get organized, keep your personal life on track,
             or boost workplace productivity, Evernote has the right plan
             for you.
@@ -28,9 +27,9 @@ return (
 
         <section className="h-full w-full flex   items-center  gap-6 overflow-hidden ">
           <div className=" w-full h-full border border-[#FFE492] rounded-[10px] flex flex-col text-[#212529] pt-[40px] pb-[40px] pr-[44px] pl-[44px] gap-4 place-content-center">
-            <span className="font-[500] text-[24px]">Free</span>
-            <span className="font-[700] text-[36px]">$0</span>
-            <span className="font-[400] text-[18px] ">
+            <span className="font-medium text-2xl">Free</span>
+            <span className="font-bold text-4xl">$0</span>
+            <span className="font-normal text-lg ">
               Capture ideas and find them quickly
             </span>
             <ul className="font-[400] text-[16px] flex flex-col  gap-4 ">

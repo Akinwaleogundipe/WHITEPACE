@@ -1,7 +1,5 @@
-import "./index.css";
 import { GoArrowRight } from "react-icons/go";
 
-import CustomiseMobile from "./Mobileviews/CustomiseMobile";
 
 
 function Customise() {
@@ -16,7 +14,7 @@ function Customise() {
             alt=""
             className="absolute pt-[170px]"
           /> */}
-          <h1 className="font-[700] text-5xl  relative ">
+          <h1 className="font-bold text-5xl  relative ">
             Customise it to your needs
           </h1>
           <p className="">
