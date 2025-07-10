@@ -4,7 +4,7 @@ import { LuCircleCheckBig } from "react-icons/lu";
 function Pricing() {
 	return (
 		<>
-			<main className="w-full h-full relative flex flex-col border gap-15 ">
+			<main className="relative flex flex-col border gap-15 container mx-auto ">
 				<section className=" w-full h-full flex flex-col  justify-between  place-content-center py-20 px-4 gap-15  lg:py-35 lg:px-8">
 					<div className="flex flex-col text-center lg:text-start text-[#212529] items-center gap-4  place-content-center border">
 						{/* <img
@@ -22,7 +22,7 @@ function Pricing() {
 						</p>
 					</div>
 
-					<section className="h-full w-full flex   items-center  gap-6 overflow-hidden ">
+					<section className="h-full w-full flex   items-center  gap-6 overflow-auto ">
 						<div className=" w-full h-full border border-[#FFE492] rounded-[10px] flex flex-col text-[#212529] pt-[40px] pb-[40px] pr-[44px] pl-[44px] gap-4 place-content-center">
 							<span className="font-[500] text-[24px]">Free</span>
 							<span className="font-[700] text-[36px]">$0</span>
