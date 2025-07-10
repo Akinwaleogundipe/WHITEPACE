@@ -17,9 +17,9 @@ function WorkManagement (){
             <img src={mobileBackground} alt="" className=" pt-25" />
           </div>
 
-          <section className="flex flex-col-reverse lg:flex-row h-full w-full items-center relative  gap-15 ">
-            <div className=" flex flex-col relative gap-8  lg:w-full lg:h-full">
-              <p className=" font-bold text-4xl lg:text-6xl text-[#212529] relative  z-10 ">
+          <section className="flex flex-col gap-15 lg:flex-row h-full w-full items-center relative   ">
+            <div className=" flex flex-col relative gap-8  ">
+              <p className=" font-bold text-4xl lg:text-5xl text-[#212529] relative  z-10 ">
                 Project Management
               </p>
               {/* <img src={Element3} alt="" className="flex  self-center absolute  z-0 " /> */}
@@ -42,8 +42,8 @@ function WorkManagement (){
               <img src={WorkTogether} alt="" />
             </div>
 
-            <div className="flex flex-col  gap-25 text-[#212529] relative ">
-              <p className=" font-bold text-4xl lg:text-7xl relative   z-10 ">
+            <div className="flex flex-col  gap-20 text-[#212529] relative ">
+              <p className=" font-bold text-4xl lg:text-6xl relative   z-10 ">
                 Work together
               </p>
               {/* <img

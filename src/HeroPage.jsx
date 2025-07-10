@@ -100,7 +100,7 @@ function HeroPage() {
           </div>
         </header>
 
-        <main className="bg-[#043873] flex flex-col w-full h-full items-center lg:justify-center  lg:flex-row  gap-15 py-20 px-4  lg:py-35  relative  text-white  ">
+        <main className="bg-[#043873] flex flex-col w-full h-full items-center lg:justify-center  lg:flex-row  gap-13 py-20 px-4  lg:py-35  relative  text-white  ">
           <div>
             <img
               className="absolute object-cover inset-0 w-full h-full "
