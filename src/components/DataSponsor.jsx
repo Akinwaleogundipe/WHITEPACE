@@ -44,7 +44,7 @@ function DataSponsor() {
 						className="absolute z-0 2xl:pl-[700px]  xl:pl-[700px] pt-[70px] lg:pl-[300px] "
 					/>
 					<p className="relative z-10 font-bold text-4xl">Our sponsors</p>
-					<div className=" flex flex-col gap-25 justify-between  items-center ">
+					<div className="w-fit flex flex-col lg:flex-row  gap-20  lg:gap-10  items-center ">
 						<img src={Apple} alt="" className="" />
 						<img src={Microsoft} alt="" />
 						<img src={Slack} alt="" />
