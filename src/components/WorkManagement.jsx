@@ -24,7 +24,7 @@ function WorkManagement() {
               the mobile app and save them to a note.
             </p>
 
-            <button className="bg-[#4F9CF9] w-50 h-17.5 rounded-lg flex items-center justify-center gap-4 text-white self-center lg:self-start">
+            <button className="bg-[#4F9CF9] w-fit px-8 py-6 rounded-lg flex items-center justify-center gap-4 text-white self-center lg:self-start">
               Get Started <GoArrowRight className="text-2xl" />
             </button>
           </div>
