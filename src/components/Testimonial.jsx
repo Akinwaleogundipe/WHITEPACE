@@ -57,7 +57,7 @@ function Testimonial() {
         <button className="bg-[#4F9CF9]  w-fit px-14 py-5   text-white rounded-md flex   lg:place-content-center gap-3 text-nowrap">
           Try Taskey free <GoArrowRight />
         </button>
-        <p className="text-white font-light text-[24px]">
+        <p className="text-white font-light text-2xl">
           On a big team?Contact sales
         </p>
         <div className="flex gap-12 text-[40px] text-white md:text-[54px] ">
@@ -68,9 +68,9 @@ function Testimonial() {
       </main>
 
       <main className=" h-full w-full bg-[#043873] flex flex-col gap-5  text-white pt-35 pb-6 px-6 md:max-lg:px-8 md:max-lg:py-10 lg:py-35">
-        <section className="flex flex-col lg:flex-row items-center md:items-start text-center md:text-start gap-25 h-full w-full border-b-[0.5px]">
-          <div className="flex flex-col items-center  md:items-start gap-4  w-[70%]">
-            <img src={Logo} alt="" />
+        <section className="flex flex-col lg:flex-row items-center md:items-start text-center md:text-start gap-25 lg:gap-15 lg:justify-center  h-full w-full ">
+          <div className="flex flex-col items-center md:items-start lg:w-[70%]   gap-4  ">
+            <img src={Logo} alt="" className="shrink-0" />
             <p className="font-light text-lg ">
               whitepace was created for the new ways we live and work. We make a
               better workspace around the world
@@ -81,14 +81,17 @@ function Testimonial() {
             <ul key={link.title}>
               <li className="font-bold hover:text-[#FFE492] ">{link.title}</li>
               {link.options.map((option) => (
-                <li key={link.title} className="hover:text-[#FFE492]">
+                <li
+                  key={link.title}
+                  className="hover:text-[#FFE492] font-extralight"
+                >
                   {option.content}
                 </li>
               ))}
             </ul>
           ))}
 
-          <div className="flex flex-col gap-5 items-center  w-[75%] md:w-[30%]">
+          <div className="flex flex-col gap-5 items-center  w-[75%] md:w-[30%] pb-18">
             <p className="font-bold  text-3xl ">Try it Today</p>
             <p className="font-light text-lg  self-start">
               Get started for free. Add your whole team as your needs grow.
@@ -98,8 +101,9 @@ function Testimonial() {
               Start today <GoArrowRight className="text-xl" />
             </button>
           </div>
-
-          <ul className="flex  flex-col items-center font-extralight  gap-3 pb-4 ">
+        </section>
+        <div className="border-b-[0.5px] lg:border-none flex  flex-col lg:flex-row  items-center">
+          <ul className="flex  flex-col md:flex-row items-center font-extralight  gap-3 md:justify-between pb-4 ">
             <li className="flex items-center gap-2">
               <CiGlobe />
               English
@@ -110,18 +114,18 @@ function Testimonial() {
             <li>Status</li>
             <li>©2021 Whitepace LLC.</li>
           </ul>
-        </section>
-        <ul className="flex items-center text-center  place-content-center text-2xl gap-4">
-          <li>
-            <TiSocialFacebook />
-          </li>
-          <li>
-            <LiaTwitter />
-          </li>
-          <li>
-            <TiSocialLinkedin />
-          </li>
-        </ul>
+          <l className="flex items-center text-center   max-md:place-content-center text-2xl gap-4">
+            <li>
+              <TiSocialFacebook />
+            </li>
+            <li>
+              <LiaTwitter />
+            </li>
+            <li>
+              <TiSocialLinkedin />
+            </li>
+          </l>
+        </div>
       </main>
     </>
   );
