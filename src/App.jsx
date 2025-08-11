@@ -7,10 +7,12 @@ import DataSponsor from "./components/DataSponsor.jsx";
 import Applications from "./components/Applications.jsx";
 import FreeTrial from "./components/FreeTrial.jsx";
 import Testimonial from "./components/Testimonial.jsx";
+import Header from "./components/Header.jsx";
 
 function App() {
 	return (
 		<>
+			<Header/>
 			<HeroPage />
 			<WorkManagement />
 			<Extension />

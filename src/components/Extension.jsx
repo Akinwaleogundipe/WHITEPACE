@@ -4,18 +4,16 @@ import underline from "../assets/desktop/Element.png";
 function Extension() {
 	return (
     <>
-      <main className="bg-[#043873] flex flex-col gap-10 items-center overflow-hidden justify-center text-center  py-20 px-4 lg:py-35 lg:px-10 2xl:px-50 lg:flex-row lg:text-start h-full w-full  text-white">
+      <main className="bg-[#043873] flex flex-col lg:flex-row gap-10  text-center lg:text-start    px-4 py-20 md:py-25 md:px-8   h-full w-full  text-white">
         <div className="flex flex-col gap-15 ">
-          <img
-            src={underline}
-            alt=""
-            className="absolute z-0 pt-[65px] pl-[250px]"
-          />
-          <p className="font-bold text-4xl  lg:text-5xl relative   z-10 ">
-            Use as Extension
-          </p>
+          <div className="">
+            <p className=" font-bold text-4xl md:text-[54px] lg:text-[64px] xl:text-7xl  relative ">
+              Use as Extension
+            </p>
+            <img src={underline} alt="" className="w-[177px] md:w-[326px] lg:w-[370px]  ml-auto -mt-4 md:mr-25 " />
+          </div>
 
-          <p className="text-normal font-light leading-7.5 w-[60%] self-center lg:self-start">
+          <p className="text-normal font-light leading-7.5 self-center lg:self-start">
             Use the web clipper extension, available on Chrome and Firefox, to
             save web pages or take screenshots as notes.
           </p>

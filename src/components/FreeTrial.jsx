@@ -7,62 +7,62 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function FreeTrial() {
 	const testimonials = [
-		{
-			description:
-				"Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
-			name: "Oberon Shaw, MCH",
-			position: "Head of Talent Acquisition, North America",
-			bgcolor: "bg-white",
-			textcolor: "white",
-			iconcolor: "#043873",
-			img: Avatar1,
-			namecolor: "#212529",
-		},
-		{
-			description:
-				"Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
-			name: "Oberon Shaw, MCH",
-			position: "Head of Talent Acquisition, North America",
-			bgcolor: "#4F9CF9",
-			textcolor: "white",
-			iconcolor: "white",
-			img: Avatar2,
-			namecolor: "#212529",
-		},
-		{
-			description:
-				"Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
-			name: "Oberon Shaw, MCH",
-			position: "Head of Talent Acquisition, North America",
-			bgcolor: "#4F9CF9",
-			textcolor: "#212529",
-			iconcolor: "white",
-			img: Avatar3,
-			namecolor: "#212529",
-		},
-		{
-			description:
-				"Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
-			name: "Oberon Shaw, MCH",
-			position: "Head of Talent Acquisition, North America",
-			bgcolor: "#4F9CF9",
-			textcolor: "#212529",
-			iconcolor: "#043873",
-			img: Avatar3,
-			namecolor: "#212529",
-		},
-		{
-			description:
-				"Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
-			name: "Oberon Shaw, MCH",
-			position: "Head of Talent Acquisition, North America",
-			bgcolor: "#4F9CF9",
-			textcolor: "#212529",
-			iconcolor: "#043873",
-			img: Avatar3,
-			namecolor: "#212529",
-		},
-	];
+    {
+      description:
+        "Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
+      name: "Oberon Shaw, MCH",
+      position: "Head of Talent Acquisition, North America",
+      bgcolor: "bg-white",
+      textcolor: "white",
+      iconcolor: "#043873",
+      img: Avatar1,
+      namecolor: "#212529",
+    },
+    {
+      description:
+        "Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
+      name: "Oberon Shaw, MCH",
+      position: "Head of Talent Acquisition, North America",
+      bgcolor: "#4F9CF9",
+      textcolor: "#FFFFFF",
+      iconcolor: "white",
+      img: Avatar2,
+      namecolor: "#212529",
+    },
+    {
+      description:
+        "Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
+      name: "Oberon Shaw, MCH",
+      position: "Head of Talent Acquisition, North America",
+      bgcolor: "#4F9CF9",
+      textcolor: "#212529",
+      iconcolor: "#FFFFFF",
+      img: Avatar3,
+      namecolor: "#212529",
+    },
+    {
+      description:
+        "Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
+      name: "Oberon Shaw, MCH",
+      position: "Head of Talent Acquisition, North America",
+      bgcolor: "#4F9CF9",
+      textcolor: "#212529",
+      iconcolor: "#043873",
+      img: Avatar3,
+      namecolor: "#212529",
+    },
+    {
+      description:
+        "Whitepace is designed as a collaboration tool for businesses that is a full project management solution",
+      name: "Oberon Shaw, MCH",
+      position: "Head of Talent Acquisition, North America",
+      bgcolor: "#4F9CF9",
+      textcolor: "#212529",
+      iconcolor: "#043873",
+      img: Avatar3,
+      namecolor: "#212529",
+    },
+  ];
 
 	return (
     <>
@@ -78,7 +78,7 @@ function FreeTrial() {
               <div
                 className={` py-14 px-10 rounded-lg flex flex-col justify-between gap-10 shadow-2xl bg-[${opt.bgcolor}] `}
               >
-                <div className={`flex flex-col   border-b gap-2 text-[${opt.textcolor}]`}>
+                <div className={`flex flex-col   border-b gap-2 ${opt.bgcolor === "#4F9CF9" ? "text-white" :"text-black"}`}>
                   <FontAwesomeIcon
                     icon={faQuoteLeft}
                     className={`text-8xl flex self-start  text-[${opt.iconcolor}]`}

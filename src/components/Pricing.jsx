@@ -1,7 +1,7 @@
 import { GoArrowRight } from "react-icons/go";
 import { LuCircleCheckBig } from "react-icons/lu";
 import background from "../assets/desktop/BACKGROUND2.png";
-import underline from "../assets/desktop/Element9.png";
+import underline from "../assets/desktop/Element6.png";
 
 function Pricing() {
   const plans = [
@@ -60,12 +60,22 @@ function Pricing() {
 
   return (
     <>
-      <main className="relative flex flex-col  gap-15 container mx-auto ">
+      <main
+        id="#pricing"
+        className="relative flex flex-col  gap-15 container mx-auto "
+      >
         <section className=" flex flex-col  justify-between  place-content-center py-20 px-4 gap-15  lg:py-35 lg:px-8">
           <div className="flex flex-col text-center lg:text-start text-[#212529] items-center gap-4  place-content-center ">
-            <h1 className="text-4xl lg:text-7xl font-bold ">
-              Choose Your Plan
-            </h1>
+            <div>
+              <p className="font-bold  text-4xl md:text-6xl lg:text-7xl ">
+                Choose Your Plan
+              </p>
+              <img
+                src={underline}
+                alt=""
+                className="w-[106px] h-[29px] mx-auto -mt-3"
+              />
+            </div>
             <p className="text-lg font-light leading-[30px">
               Whether you want to get organized, keep your personal life on
               track, or boost workplace productivity, Evernote has the right
@@ -140,11 +150,7 @@ function Pricing() {
         </section>
       </main>
       <section className="bg-[#043873] h-full w-full  relative flex flex-col justify-center xl:items-center text-white xl:text-center gap-15 2xl:px-50 ">
-        <img
-            src={underline}
-            alt=""
-            className=""
-          />
+        <img src={underline} alt="" className="" />
         <div className="absolute xl:hidden">
           <img src={background} alt="" className="" />
         </div>

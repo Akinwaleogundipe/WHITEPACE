@@ -1,24 +1,33 @@
 import { GoArrowRight } from "react-icons/go";
 import WorkTogether from "../assets/desktop/WorkTogetherImage.png";
 import discussing from "../assets/desktop/discussing.png";
-import mobileBackground from "../assets/tablet/tabletelement2.png";
-// lg:justify-center  lg:flex-row  gap-15 py-20 px-4  lg:py-35  relative
+import background from "../assets/desktop/BACKGROUND.png";
+import underline from "../assets/desktop/Element10.png";
+import element from "../assets/desktop/Element6.png";
 
 function WorkManagement() {
 	return (
+    
     <>
-      <main className=" flex flex-col justify-center items-center gap-25 relative w-full h-full text-center border lg:justify-center lg:text-start py-20 px-6  lg:py-35 lg:px-9  2xl:px-50">
-        <div className="absolute inset-0 w-full h-full">
-          <img src={mobileBackground} alt="" className=" pt-25" />
+      <main className=" flex flex-col w-full h-full relative gap-25 container text-center lg:text-start mx-auto py-20 md:px-5 lg:py-35  ">
+        <div className=" absolute inset-0 w-[165px] h-[270px] flex  ">
+          <img src={background} alt="" className="mt-10  -ml-16 md:-ml-10" />
         </div>
 
         <section className="flex flex-col gap-15 lg:flex-row h-full w-full  relative   ">
-          <div className=" flex flex-col relative gap-8  ">
-            <p className=" font-bold text-4xl lg:text-5xl text-[#212529] relative  z-10 ">
-              Project Management
-            </p>
-            {/* <img src={Element3} alt="" className="flex  self-center absolute  z-0 " /> */}
-            <p className="text-lg font-light  leading-8 ">
+          <div className=" flex flex-col relative ">
+            <div className="mb-4  ">
+              <p className=" font-bold text-4xl md:text-[54px] lg:text-[64px] xl:text-7xl text-[#212529] relative   ">
+                Project Management
+              </p>
+              <img
+                src={element}
+                alt=""
+                className=" w-[228px] md:w-[341px] lg:w-[420px]  mx-auto  -mt-3  md:mr-24  md:-mt-4 xl:mr-50 "
+              />
+            </div>
+
+            <p className="text-lg font-light  leading-8 mb-15 ">
               Images, videos, PDFs and audio files are supported. Create math
               expressions and diagrams directly from the app. Take photos with
               the mobile app and save them to a note.
@@ -30,7 +39,7 @@ function WorkManagement() {
           </div>
 
           <div className=" w-full h-full flex place-content-center lg:place-content-end">
-            <img src={discussing} alt="" className="self-center" />
+            <img src={discussing} alt="" className="" />
           </div>
         </section>
 
@@ -40,14 +49,17 @@ function WorkManagement() {
           </div>
 
           <div className="flex flex-col  gap-20 text-[#212529] relative ">
-            <p className=" font-bold text-4xl lg:text-6xl relative   z-10 ">
-              Work together
-            </p>
-            {/* <img
-                src={Underline}
+            <div>
+              <p className="  font-bold text-4xl md:text-[54px] lg:text-[64px] xl:text-7xl text-[#212529] relative ">
+                Work together
+              </p>
+              <img
+                src={underline}
                 alt=""
-                className="absolute  left-[30%] top-[37%]"
-              /> */}
+                className="w-[169px] md:w-[224px] lg:w-[300px] xl:w-[330px] ml-auto mr-5 md:mr-48  lg:mr-30 xl:mr-50  -mt-3 "
+              />
+            </div>
+
             <p className="text-lg font-light leading-[30px]">
               With whitepace, share your notes with your colleagues and
               collaborate on them. You can also publish a note to the internet

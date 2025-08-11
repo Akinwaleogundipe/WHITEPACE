@@ -67,7 +67,7 @@ function Testimonial() {
         </div>
       </main>
 
-      <main className=" h-full w-full bg-[#043873] flex flex-col gap-5  text-white pt-35 pb-6 px-6 md:max-lg:px-8 md:max-lg:py-10 lg:py-35">
+      <main className=" h-full w-full bg-[#043873] flex flex-col gap-5  text-white pt-35 pb-6 px-6 md:max-lg:px-8 md:max-lg:py-10 lg:pt-35 lg:pb-10">
         <section className="flex flex-col lg:flex-row items-center md:items-start text-center md:text-start gap-25 lg:gap-15 lg:justify-center  h-full w-full ">
           <div className="flex flex-col items-center md:items-start lg:w-[70%]   gap-4  ">
             <img src={Logo} alt="" className="shrink-0" />
@@ -93,7 +93,7 @@ function Testimonial() {
 
           <div className="flex flex-col gap-5 items-center  w-[75%] md:w-[30%] pb-18">
             <p className="font-bold  text-3xl ">Try it Today</p>
-            <p className="font-light text-lg  self-start">
+            <p className="font-light text-lg  ">
               Get started for free. Add your whole team as your needs grow.
             </p>
 
@@ -102,8 +102,10 @@ function Testimonial() {
             </button>
           </div>
         </section>
-        <div className="border-b-[0.5px] lg:border-none flex  flex-col lg:flex-row  items-center">
-          <ul className="flex  flex-col md:flex-row items-center font-extralight  gap-3 md:justify-between pb-4 ">
+      </main>
+      <section className="bg-[#043873] text-white flex flex-col lg:flex-row justify-between p-5 items-center md:items-start gap-3">
+        <div className="md:border-b-[0.1px]   lg:border-none flex  flex-col lg:flex-row w-full pb-3 ">
+          <ul className="  flex  flex-col md:flex-row justify-between items-center gap-3 font-extralight   ">
             <li className="flex items-center gap-2">
               <CiGlobe />
               English
@@ -114,7 +116,9 @@ function Testimonial() {
             <li>Status</li>
             <li>©2021 Whitepace LLC.</li>
           </ul>
-          <l className="flex items-center text-center   max-md:place-content-center text-2xl gap-4">
+        </div>
+        <div>
+          <ul className="flex  text-2xl gap-4">
             <li>
               <TiSocialFacebook />
             </li>
@@ -124,9 +128,9 @@ function Testimonial() {
             <li>
               <TiSocialLinkedin />
             </li>
-          </l>
+          </ul>
         </div>
-      </main>
+      </section>
     </>
   );
 }
