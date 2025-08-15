@@ -1,7 +1,8 @@
 import { GoArrowRight } from "react-icons/go";
 import { LuCircleCheckBig } from "react-icons/lu";
 import background from "../assets/desktop/BACKGROUND2.png";
-import underline from "../assets/desktop/Element6.png";
+import underline from "../assets/desktop/Element9.png";
+import line from "../assets/desktop/Element6.png";
 
 function Pricing() {
   const plans = [
@@ -66,17 +67,17 @@ function Pricing() {
       >
         <section className=" flex flex-col  justify-between  place-content-center py-20 px-4 gap-15  lg:py-35 lg:px-8">
           <div className="flex flex-col text-center lg:text-start text-[#212529] items-center gap-4  place-content-center ">
-            <div>
-              <p className="font-bold  text-4xl md:text-6xl lg:text-7xl ">
+            <div >
+              <p className="font-bold  text-4xl md:text-6xl lg:text-7xl relative z-10">
                 Choose Your Plan
               </p>
               <img
-                src={underline}
+                src={line}
                 alt=""
-                className="w-[106px] h-[29px] mx-auto -mt-3"
+                className="w-[106px] h-[29px] md:w-[290px] md:ml-auto max-md:mx-auto  -mt-4 "
               />
             </div>
-            <p className="text-lg font-light leading-[30px">
+            <p className="text-lg font-light ">
               Whether you want to get organized, keep your personal life on
               track, or boost workplace productivity, Evernote has the right
               plan for you.
@@ -150,21 +151,27 @@ function Pricing() {
         </section>
       </main>
       <section className="bg-[#043873] h-full w-full  relative flex flex-col justify-center xl:items-center text-white xl:text-center gap-15 2xl:px-50 ">
-        <img src={underline} alt="" className="" />
-        <div className="absolute xl:hidden">
-          <img src={background} alt="" className="" />
+        <div className="absolute flex xl:hidden">
+          <img src={background} alt="" className="hidden md:block ml-auto" />
         </div>
-        <div className="flex flex-col relative z-10 gap-8 w-[75%] my-25 mx-4">
-          <p className="text-4xl lg:text-7xl font-bold">
-            Your work, everywhere you are
-          </p>
+        <div className="flex flex-col relative z-10 gap-8 w-[75%] my-25 mx-4 ">
+          <div>
+            <p className=" relative text-3xl md:text-[54px] lg:text-[64px] font-bold z-10">
+              Your work, everywhere you are
+            </p>
+            <img
+              src={underline}
+              alt=""
+              className="relative  max-md:w-[274px] max-md:h-[31px] max-lg:w-[234px]  max-lg:h-[45px] xl:ml-auto -mt-4 md:-mt-8 z-0"
+            />
+          </div>
           <p className="font-light  ">
             Access your notes from your computer, phone or tablet by
             synchronising with various services, including whitepace, Dropbox
             and OneDrive. The app is available on Windows, macOS, Linux, Android
             and iOS. A terminal app is also available!
           </p>
-          <button className="bg-[#4F9CF9] w-[195px] h-[63px] relative rounded-[10px] gap-[10px]  flex items-center place-content-center">
+          <button className="bg-[#4F9CF9] w-fit px-16 py-5 rounded-lg relative  flex items-center gap-2">
             Try Taskey <GoArrowRight className="text-xl"></GoArrowRight>
           </button>
         </div>

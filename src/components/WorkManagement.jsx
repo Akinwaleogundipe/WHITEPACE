@@ -23,7 +23,7 @@ function WorkManagement() {
               <img
                 src={element}
                 alt=""
-                className=" w-[228px] md:w-[341px] lg:w-[420px]  mx-auto  -mt-3  md:mr-24  md:-mt-4 xl:mr-50 "
+                className=" w-[228px] md:w-[341px] lg:w-[420px]  mx-auto  -mt-3  md:mr-24  md:-mt-4  lg:ml-auto "
               />
             </div>
 

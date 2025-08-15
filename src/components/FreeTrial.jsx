@@ -67,10 +67,13 @@ function FreeTrial() {
 	return (
     <>
       <main className="flex flex-col relative py-25 px-4 md:py-35 md:px-5 gap-20 container mx-auto">
-        <img src={underline} alt="#" className="  " />
-        <p className="z-10 text-4xl lg:text-7xl font-bold text-[#212529] text-center">
+        <div >
+        <p className="relative z-10 text-[40px] md:text-[54px] lg:text-7xl font-bold text-[#212529] text-center">
           What Our Clients Says
         </p>
+        <img src={underline} alt="" className="max-md:w-[120px] w-[200px] max-md:mx-auto  ml-auto mr-10  xl:mr-50 2xl:mr-70 -mt-6  " />
+
+        </div>
 
         <div className="grid grid-flow-col auto-cols-max overflow-auto scroll-smooth gap-8 ">
           {testimonials.map((opt) => (
