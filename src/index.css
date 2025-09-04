@@ -1,10 +1,17 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-
 @layer base {
-    *{
-        font-family: "Inter", sans-serif;
-    }
-
+	* {
+		font-family: "Inter", sans-serif;
+	}
+}
+body {
+	scroll-behavior: smooth;
+}
+*::after,
+html {
+	box-sizing: border-box;
+	width: 100%;
+	scroll-behavior: smooth;
 }
