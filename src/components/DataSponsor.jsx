@@ -17,7 +17,7 @@ function DataSponsor() {
           </div>
           <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start text-center lg:text-start lg:w-[60%] ">
             <div className=" w-fit mb-4 ">
-              <p className="text-[#111315] font-bold  text-4xl md:text-6xl lg:text-7xl relative z-10 ">
+              <p className="text-[#111315]  font-bold text-4xl md:text-[54px] lg:text-[64px] xl:text-[72px] ">
                 100% your data
               </p>
               <img
@@ -40,13 +40,14 @@ function DataSponsor() {
         </section>
         <section className="flex flex-col justify-center items-center  text-center   gap-24 ">
           <div>
-
-            <p className="relative z-10 font-bold text-4xl md:text-[54px] lg:text-[64px] xl:text-[72px]">Our sponsors</p>
-          <img
-            src={underline}
-            alt=""
-            className="relative  z-0 w-[191px] lg:w-[220px] ml-auto -mr-8 -mt-2 lg:-mt-5"
-          />
+            <p className="relative z-10 font-bold text-4xl md:text-[54px] lg:text-[64px] xl:text-[72px]">
+              Our sponsors
+            </p>
+            <img
+              src={underline}
+              alt=""
+              className="relative  z-0 w-[191px] lg:w-[220px] ml-auto -mr-8 -mt-2 lg:-mt-5"
+            />
           </div>
           <div className="w-fit flex flex-col lg:flex-row  gap-20  lg:gap-10 2xl:gap-20  items-center ">
             <img src={Apple} alt="" className="" />

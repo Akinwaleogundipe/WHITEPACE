@@ -7,7 +7,6 @@ import element from "../assets/desktop/Element6.png";
 
 function WorkManagement() {
 	return (
-    
     <>
       <main className=" flex flex-col w-full h-full relative gap-25 container text-center lg:text-start mx-auto py-20 md:px-5 lg:py-35  ">
         <div className=" absolute inset-0 w-[165px] h-[270px] flex  ">
@@ -23,7 +22,7 @@ function WorkManagement() {
               <img
                 src={element}
                 alt=""
-                className=" w-[228px] md:w-[341px] lg:w-[420px]  mx-auto  -mt-3  md:mr-24  md:-mt-4  lg:ml-auto "
+                className=" w-[228px] md:w-[341px] lg:w-[420px]  mx-auto max-md:ml-10 -mt-3  max-lg:mr-24  md:-mt-4  lg:mx-auto "
               />
             </div>
 
@@ -56,7 +55,7 @@ function WorkManagement() {
               <img
                 src={underline}
                 alt=""
-                className="w-[169px] md:w-[224px] lg:w-[300px] xl:w-[330px] ml-auto mr-5 md:mr-48  lg:mr-30 xl:mr-50  -mt-3 "
+                className="w-[228px] md:w-[341px] lg:w-[420px]  max-md:mx-auto  max-lg:ml-auto max-lg:mr-20 -mt-3    md:-mt-4  lg:mx-auto "
               />
             </div>
 

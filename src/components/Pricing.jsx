@@ -62,7 +62,7 @@ function Pricing() {
   return (
     <>
       <main
-        id="#pricing"
+        id="pricing"
         className="relative flex flex-col  gap-15 container mx-auto "
       >
         <section className=" flex flex-col  justify-between  place-content-center py-20 px-4 gap-15  lg:py-35 lg:px-8">
