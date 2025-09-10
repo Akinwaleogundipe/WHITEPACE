@@ -9,7 +9,7 @@ function WorkManagement() {
 	return (
     <>
       <div
-        className="absolute bg-no-repeat w-full h-full bg-[190px_auto] md:bg-[300px_auto] xl:bg-[300px_auto] xl:bg-[0%_30%]  md:bg-[-20%_2%] bg-[-40%_2%] "
+        className="absolute bg-no-repeat w-full h-full bg-[190px_auto] md:bg-[300px_auto] xl:bg-[500px_auto] xl:bg-[0%_7%]  md:bg-[-20%_2%] bg-[-40%_2%] "
         style={{ backgroundImage: `url(${background})` }}
       ></div>
       <main className=" flex flex-col w-full h-full relative gap-25 container text-center lg:text-start mx-auto py-20 md:px-5 ">
