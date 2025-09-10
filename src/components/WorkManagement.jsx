@@ -8,10 +8,14 @@ import element from "../assets/desktop/Element6.png";
 function WorkManagement() {
 	return (
     <>
-      <main className=" flex flex-col w-full h-full relative gap-25 container text-center lg:text-start mx-auto py-20 md:px-5 lg:py-35  ">
-        <div className=" absolute inset-0 w-[165px] h-[270px] flex  ">
-          <img src={background} alt="" className="mt-10  -ml-16 md:-ml-10" />
-        </div>
+      <div
+        className="absolute bg-no-repeat w-full h-full bg-[190px_auto] md:bg-[300px_auto] xl:bg-[300px_auto] xl:bg-[0%_30%]  md:bg-[-20%_2%] bg-[-40%_2%] "
+        style={{ backgroundImage: `url(${background})` }}
+      ></div>
+      <main className=" flex flex-col w-full h-full relative gap-25 container text-center lg:text-start mx-auto py-20 md:px-5 ">
+        {/* <div className=" absolute inset-0 w-[165px] h-[270px] flex  ">
+          <img src={background} alt="" className="" />
+        </div> */}
 
         <section className="flex flex-col gap-15 lg:flex-row h-full w-full  relative   ">
           <div className=" flex flex-col relative ">
